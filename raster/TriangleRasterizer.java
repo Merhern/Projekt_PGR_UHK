@@ -15,6 +15,7 @@ public class TriangleRasterizer {
     public void rasterize(Polygon polygon) {
 
         for (int i = 0; i < polygon.getCount(); i++) {
+            //omezení bodů na tři i guess
             if(i == 2) {
                 //definujeme první spoj (bod před)
                 Point point0 = polygon.getPoint(i - 2);
