@@ -81,6 +81,7 @@ public class Canvas {
 
         });
 
+        //vyčisti plátno
         panel.addKeyListener(new KeyAdapter() {
             @Override
             public void keyReleased(KeyEvent c) {
@@ -90,6 +91,7 @@ public class Canvas {
             }
         } );
 
+        //trojúhelník mode
         panel.addKeyListener(new KeyAdapter() {
             @Override
             public void keyPressed(KeyEvent t) {
@@ -121,24 +123,6 @@ public class Canvas {
 
             }
         } );
-
-/*        panel.addMouseMotionListener(new MouseAdapter() {
-            @Override
-            public void mouseDragged(MouseEvent mouseEvent) {
-                super.mouseDragged(mouseEvent);
-
-                raster.clear();
-
-                Line line = new Line(
-                        width / 2, height / 2,
-                        mouseEvent.getX(),
-                        mouseEvent.getY()
-                );
-                lineRasterizer.rasterize(line);
-
-                panel.repaint();
-            }
-        });*/
 
     }
 
